@@ -47,7 +47,8 @@ _common_dark_theme_custom()
     background: var(--block) !important
 
 p>code:not([class]),li>code:not([class])
-  background: var(--background) !important
+  background: rgba(255, 255, 255, 0) !important
+  color: $c-orange !important
 pre:not([class]):has(>code)
   border: 2px solid var(--block-border);
 
@@ -121,9 +122,6 @@ td
   figcaption
     span
       padding: 5px 5rem !important
-
-li:not([class]) a:not([class]), p:not([class]) a:not([class]), table a:not([class])
-  color: var(--theme-link) !important
 
 a:hover
   color: var(--theme-link) !important
